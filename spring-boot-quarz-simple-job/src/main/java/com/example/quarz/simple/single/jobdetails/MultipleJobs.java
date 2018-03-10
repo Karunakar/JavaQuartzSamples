@@ -18,7 +18,7 @@ public class MultipleJobs {
 
 			JobDetail hello_job = JobBuilder.newJob().ofType(JobOne.class).withIdentity(" JOb1s", "group1").build();
 
-			JobDetail job_one = JobBuilder.newJob().ofType(HelloJob.class).withIdentity("hello job", "group1").build();
+			JobDetail job_one = JobBuilder.newJob().ofType(JobOne.class).withIdentity("hello job", "group1").build();
 
 			// JobDetail job_one =
 			// JobBuilder.newJob().ofType(JobOne.class).withIdentity("Job One",
