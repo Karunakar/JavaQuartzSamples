@@ -20,10 +20,6 @@ public class MultipleJobs {
 
 			JobDetail job_one = JobBuilder.newJob().ofType(JobOne.class).withIdentity("hello job", "group1").build();
 
-			// JobDetail job_one =
-			// JobBuilder.newJob().ofType(JobOne.class).withIdentity("Job One",
-			// "group1").build();
-
 			// Set the scheduler timings.
 			Trigger trigger1 = TriggerBuilder.newTrigger().withIdentity("cronTrigger1", "group1")
 					.withSchedule(CronScheduleBuilder.cronSchedule("0/10 * * * * ?")).build();
