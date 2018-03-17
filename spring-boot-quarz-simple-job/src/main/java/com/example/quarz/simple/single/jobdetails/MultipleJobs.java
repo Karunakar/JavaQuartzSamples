@@ -13,7 +13,7 @@ public class MultipleJobs {
 	public static void main(String args[]) {
 		try {
 			// Set job details.
-			JobDetail job = JobBuilder.newJob().ofType(HelloJob.class).storeDurably().withIdentity("Qrtz_Job_Detail")
+			JobDetail job = JobBuilder.newJob().ofType(JobOne.class).storeDurably().withIdentity("Qrtz_Job_Detail")
 					.withDescription("Invoke Sample Job service...").build();
 
 			JobDetail hello_job = JobBuilder.newJob().ofType(JobOne.class).withIdentity(" JOb1s", "group1").build();

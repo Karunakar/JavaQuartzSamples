@@ -18,12 +18,12 @@ public class DbJobDetails {
 
 	private String job_group;
 
-	public String getGroup() {
+	public String getJob_group() {
 		return job_group;
 	}
 
-	public void setGroup(String group) {
-		this.job_group = group;
+	public void setJob_group(String job_group) {
+		this.job_group = job_group;
 	}
 
 	public String getName() {

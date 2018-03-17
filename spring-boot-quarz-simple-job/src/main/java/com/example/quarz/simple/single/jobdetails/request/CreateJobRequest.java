@@ -8,7 +8,15 @@ public class CreateJobRequest {
 
 	private String name;
 
-	private String group;
+	private String job_group;
+
+	public String getJob_group() {
+		return job_group;
+	}
+
+	public void setJob_group(String job_group) {
+		this.job_group = job_group;
+	}
 
 	public long getId() {
 		return id;
@@ -35,11 +43,11 @@ public class CreateJobRequest {
 	}
 
 	public String getGroup() {
-		return group;
+		return job_group;
 	}
 
 	public void setGroup(String group) {
-		this.group = group;
+		this.job_group = group;
 	}
 
 }

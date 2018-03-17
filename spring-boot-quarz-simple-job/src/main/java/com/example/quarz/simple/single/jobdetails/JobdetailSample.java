@@ -12,7 +12,7 @@ public class JobdetailSample {
 	public static void main(String args[]) {
 		try {
 			// Set job details.
-			JobDetail job = JobBuilder.newJob().ofType(HelloJob.class).storeDurably().withIdentity("Qrtz_Job_Detail")
+			JobDetail job = JobBuilder.newJob().ofType(DynamicJob.class).storeDurably().withIdentity("Qrtz_Job_Detail")
 					.withDescription("Invoke Sample Job service...").build();
 
 			// Set the scheduler timings.
